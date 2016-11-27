@@ -1,0 +1,47 @@
+{% load staticfiles %}
+
+<HTML>
+
+
+<HEAD>
+
+	<Title>Salutem Lux - Регистрация</Title>
+	<Link rel = "stylesheet" type = "text/css" href = "{% static 'css/sign.css' %}" />
+
+</HEAD>
+
+
+<BODY>
+
+
+	<Div id="main">
+
+		<H2 id="main_caption" >
+			Создать аккаунт
+		</H2>
+
+		<P id="description" >
+			Если вы уже зарегистрированны, <A href="/login/">пожалуйста, войдите в свой аккаунт</A>.
+		</P>
+
+		<Div id="form">
+            <form action="/register/" method="post">
+
+                {% csrf_token %}
+                {{ form.as_p }}
+
+
+                <P>
+                    <input type="submit" name="submit" value="Создать аккаунт" id="button" />
+                </P>
+            </form>
+		</Div>
+
+	</Div>
+
+	<div id = "line"></div>
+
+</BODY>
+
+
+</HTML>

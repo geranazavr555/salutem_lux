@@ -1,0 +1,64 @@
+{% load staticfiles %}
+
+<HTML>
+
+
+<HEAD>
+
+	<Title>Sign up</Title>
+	<Link rel = "stylesheet" type = "text/css" href = "{% static 'css/sign.css' %}" />
+	<Link rel = "stylesheet" type = "text/css" href = "{% static 'css/lc.css' %}" />
+
+</HEAD>
+
+
+<BODY>
+
+    <div id = "navigation" >
+		<div id = "up" >
+
+			<div id = "logo" >
+				<img src = "{% static 'images/logo3.jpg' %}" />
+			</div>
+
+			<ul id = "navigation_links" >
+				<li class = "menu" >
+					<a href = "/submit/" >Отправить</a>
+				</li>
+				<li class = "menu" >
+					<a href = "/history/" >История</a>
+				</li>
+				<li class = "menu" >
+					<a href = "/logout/" >Выйти</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<Div id="main">
+
+		<H2 id="main_caption" >
+			Отослать исследование на проверку
+		</H2>
+
+		<P id="description" >
+		</P>
+
+		<Div id="form">
+            <form action="/submit/" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form }}
+                <P>
+                    <input type="submit" name="submit" value="Отправить" id="button" />
+                </P>
+            </form>
+		</Div>
+
+	</Div>
+
+
+</BODY>
+
+
+</HTML>

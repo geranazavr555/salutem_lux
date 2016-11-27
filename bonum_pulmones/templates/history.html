@@ -1,0 +1,67 @@
+{% load staticfiles %}
+
+<HTML>
+
+
+<HEAD>
+
+	<Title>Salutem Lux - История</Title>
+	<Link rel = "stylesheet" type = "text/css" href = "{% static 'css/sign.css' %}" />
+	<Link rel = "stylesheet" type = "text/css" href = "{% static 'css/lc.css' %}" />
+
+</HEAD>
+
+
+<BODY>
+
+    <div id = "navigation" >
+		<div id = "up" >
+
+			<div id = "logo" >
+				<img src = "{% static 'images/logo3.jpg' %}" />
+			</div>
+
+			<ul id = "navigation_links" >
+				<li class = "menu" >
+					<a href = "/submit/" >Отправить</a>
+				</li>
+				<li class = "menu" >
+					<a href = "/history/" >История</a>
+				</li>
+				<li class = "menu" >
+					<a href = "/logout/" >Выйти</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+	<Div id="main">
+
+		<H2 id="main_caption" >
+			История обследований
+		</H2>
+
+        {% if history %}
+            <P id="description" >
+                Здесь показываются все ваши отправленные обследования
+            </P>
+
+            <Div id="HistoryList">
+                <ul>
+                    {% for i in history %}
+                        <li> <a href="/get_result/{{ i.filename }}/">Результаты обследования от {{ i.date }}</a> </li>
+                    {% endfor %}
+                </ul>
+            </Div>
+        {% else %}
+            <P id="description" >
+                Вы ещё не отправляли ни одного обследования. <a href="/submit/">Отправить первое обследование</a>
+            </P>
+        {% endif %}
+
+	</Div>
+
+</BODY>
+
+
+</HTML>

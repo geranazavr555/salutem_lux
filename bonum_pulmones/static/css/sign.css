@@ -1,0 +1,202 @@
+body
+{
+	min-width:1280px;
+	background-color:white;
+	color:#000;
+	font-family:wf_segoe-ui_light,'Segoe UI Light','Segoe WP Light',wf_segoe-ui_normal,'Segoe UI',Segoe,'Segoe WP',Tahoma,Verdana,Arial,sans-serif;
+	padding:0px;
+	margin:0px;
+}
+
+#main
+{
+	margin:40px auto 80px auto;
+	padding:0px;
+	width:850px;
+}
+
+#main_caption
+{
+	font-size:42pt;
+	font-weight:normal;
+	color:#00a550;
+	margin-bottom:20px;
+}
+
+a:link
+{
+	color:#00a550;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+a:active
+{
+	color:#00a550;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+a:visited
+{
+	color:#00a550;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+a:hover
+{
+	color:#00a550;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+#description
+{
+	font-size:1.2em;
+}
+
+#id_last_name
+{
+	width:400px;
+	height:auto;
+	padding:7px;
+	margin-left:5px;
+}
+
+#id_first_name
+{
+	width:400px;
+	height:auto;
+	padding:7px;
+	margin-left:38px;
+}
+
+#id_username
+{
+	width:400px;
+	height:auto;
+	padding:7px;
+	margin-left:26px;
+}
+
+#id_email
+{
+	width:400px;
+	height:auto;
+	padding:7px;
+	margin-left:32px;
+}
+
+#id_password
+{
+	width:400px;
+	height:auto;
+	padding:7px;
+	margin-left:16px;
+}
+
+#county_select
+{
+	width:400px;
+	height:auto;
+	padding:7px;
+	border: 1px solid #bababa;
+	font-family: "Segoe UI","Segoe UI Web Regular","Segoe UI Symbol","Helvetica Neue","BBAlpha Sans","S60 Sans",Arial,sans-serif;
+}
+
+#postcode_input
+{
+	width:400px;
+	height:auto;
+	padding:7px;
+}
+
+#birthday_select
+{
+	width:80px;
+	height:auto;
+	padding:7px;
+}
+
+#birthmonth_select
+{
+	width:200px;
+	height:auto;
+	padding:7px;
+	margin-left:16px;
+}
+
+#birthyear_select
+{
+	width:80px;
+	height:auto;
+	padding:7px;
+	margin-left:16px;
+}
+
+#id_sex
+{
+	width:140px;
+	height:auto;
+	padding:7px;
+	margin-left:40px;
+}
+
+#request_caption
+{
+	font-size:20pt;
+	font-weight:normal;
+	color:#000;
+	margin-bottom:-10px;
+}
+
+#information_defense
+{
+	margin-top:20px;
+}
+
+#country_input
+{
+	width:400px;
+	height:auto;
+	padding:7px;
+}
+
+#phone_number_input
+{
+	width:400px;
+	height:auto;
+	padding:7px;
+}
+
+#unclickable_link
+{
+	color:#0fa3ff;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+#button
+{
+	background-color:#00a550;
+	color:#fff;
+	width:140px;
+	height:auto;
+	padding:7px;
+	border:0px;
+	margin-right:20px;
+	cursor:pointer;
+}
+
+#line {
+	display: block;
+	width: 12%;
+	height: 140%;
+	min-height: 950px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -10;
+	background-color: #00a550;
+}

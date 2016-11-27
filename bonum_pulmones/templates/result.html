@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<html>
+
+<head>
+	<title>Salutem Lux</title>
+	<link rel = "stylesheet" type = "text/css" href = "{% static 'css/lc.css' %}" />
+</head>
+
+<body>
+
+	<div id = "navigation" >
+		<div id = "up" >
+
+			<div id = "logo" >
+				<img src = "{% static 'images/logo3.jpg' %}" />
+			</div>
+
+			<ul id = "navigation_links" >
+				<li class = "menu" >
+					<a href = "/submit/" >Отправить</a>
+				</li>
+				<li class = "menu" >
+					<a href = "/history/" >История</a>
+				</li>
+				<li class = "menu" >
+					<a href = "/logout/" >Выйти</a>
+				</li>
+			</ul>
+
+		</div>
+	</div>
+
+	<div id = "main-info">
+		</div> -->
+
+		<div id = "main-info-state">
+			{% if result == None %}
+				<p>Обследование от {{ date }} ещё не обработано.</p>
+			{% else %}
+				<p>Результаты обследования от {{ date }}: Вы имеете проблемы со здоровьем с вероятностью в {{ result }}%</p>
+			{% endif %}
+		</div>
+	</div>
+
+</body>
+
+</html>

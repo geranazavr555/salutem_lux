@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    {% load staticfiles %}
+	<title>Salutem Lux</title>
+	<Link rel = "stylesheet" type = "text/css" href = "{% static 'css/main.css' %}" />
+</head>
+
+<body>
+
+	<div id = "capture">
+		<img src="{% static 'images/logo2.jpg' %}" id = "capture-img"/>
+		<div id = "capture-text">
+			Salutem Lux
+		</div>
+	</div>
+
+	<div id = "top-img-box">
+		<img src="{% static 'images/purple-top-shape.png' %}" id="top-img">
+	</div>
+
+	<div id="form">
+		<form name = "Reg" action="/login/" method="post">
+
+			<h1 id="greeting" >
+				Войдите в свой аккаунт:
+			</h1>
+
+			{% if invalid_login %}
+				Неверный логин или пароль
+			{% endif %}
+
+			{% if disabled_login %}
+				Ваш аккаунт не активирован
+			{% endif %}
+
+            {% csrf_token %}
+
+			{{ form.non_field_errors }}
+			<div>
+				{{ form.username.errors }}
+				<label for="{{ form.username.id_for_label }}">Логин:</label>
+				{{ form.username }}
+			</div>
+
+			<div>
+				{{ form.password.errors }}
+				<label for="{{ form.password.id_for_label }}">Пароль:</label>
+				{{ form.password }}
+			</div>
+
+			<div id="buttons" >
+				<div id="create-account">
+					<a href="/register/">Создать аккаунт</a>
+				</div>
+				<input type="submit" name="agree" value="Войти" id="submit" />
+			</div>
+
+		</form>
+	</div>
+
+		<div>
+			<img src="{% static 'images/purple-bottom-shape.png' %}" id="bottom-img">
+		</div>
+</body>
+
+</html>

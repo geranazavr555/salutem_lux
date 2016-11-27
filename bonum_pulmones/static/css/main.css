@@ -1,0 +1,148 @@
+body {
+	min-width:1280px;
+	background-color:white;
+	color:#000;
+	font-family:wf_segoe-ui_light,'Segoe UI Light','Segoe WP Light',wf_segoe-ui_normal,'Segoe UI',Segoe,'Segoe WP',Tahoma,Verdana,Arial,sans-serif;
+	padding:0px;
+	margin:0px;
+}
+
+a:link {
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+a:active {
+	color: #00a550;
+	text-decoration: none;
+	cursor:pointer;
+}
+
+a:visited {
+	color:#000;
+	text-decoration:none;
+	cursor:pointer;
+}
+
+a:hover {
+	color: #00a550;
+	text-decoration:underline;
+	cursor:pointer;
+}
+
+div {
+	padding:0px;
+	margin:0px;
+}
+
+#capture {
+	display: block;
+	width: 600px;
+	height: 170px;
+	margin: 20px 480px 0 200px;
+}
+
+#capture-img {
+	float: left;
+}
+
+#capture-text {
+	height: 90px;
+	margin: 20px auto 60px auto;
+	float: left;
+	font-size: 80px;
+	color: #000;
+}
+
+#top-img-box {
+	position: relative;
+	top: -100px;
+	z-index: -1;
+	margin-bottom: -100px;
+}
+
+#top-img {
+	padding: 0;
+	margin: 0;
+	width:100%;
+}
+
+#bottom-img {
+	padding:0px;
+	margin:0px;
+	width:100%;
+}
+
+#time {
+	font-size:3.5em;
+	font-weight: 600;
+	margin-top:0px;
+}
+
+#topH {
+	font-size:3.5em;
+	font-weight: 600;
+	margin-top:1%;
+	margin-bottom:0px;
+}
+
+#form {
+	display: block;
+	margin: 20px auto;
+	width: 500px;
+	height: 250px;
+	vertical-align:middle;
+	color: #000;	
+	padding-top:1px;
+}
+
+#id_username {
+	width:300px;
+	height:38px;
+	padding: 0 10px 0 10px;
+	margin: 10px;
+	border:4px solid #33ff33;
+}
+
+#id_password {
+	width:300px;
+	height:38px;
+	padding: 0 10px 0 10px;
+	margin: 10px 20px 10px 10px;
+	border:4px solid #33ff33;
+}
+
+#greeting {
+	margin-top:20px;
+	margin-bottom: 5px;
+	font-size: 30px;
+}
+
+#buttons {
+	text-align:right;
+	margin: 15px 0;
+}
+
+#submit {
+	background-color: white;
+	font-size: 17px;
+	color: #000;
+	width:80px;
+	height:30px;
+	border: 4px solid #33ff33;
+	margin-right:10px;
+	cursor:pointer;
+}
+
+#create-account {
+	display: block;
+	float: left;
+	height: 30px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+label {
+    width: 80px;
+}
